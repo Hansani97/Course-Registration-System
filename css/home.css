@@ -1,0 +1,92 @@
+*{margin:0; padding:0;}
+a{text-decoration:none;}
+
+.clearfix{overflow:auto}
+
+body{
+	background: url("../img/2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.wrapper{
+	margin: 0 auto;
+	width: 1350px;
+}
+
+div .logo {
+	width: 970px
+	margin:15px;
+}
+div .logo div.image1{
+	margin: 10px;
+	width: 120px;
+	float: left;
+}
+div.logo div.header{
+	width: 850px;
+	float: left;
+}
+div.header h1{
+	margin-top: 30px; 
+	font-size:42px;
+	
+}
+div.header p{
+	margin-top: 5px;
+	font-size: 25px;
+}
+div .logo h2{
+	margin-top: 5px;
+	font-size:32px;
+}
+
+.top-bar{
+	width: 1350px;
+	background:none;
+}
+.top-bar-links{
+	float:left;
+}
+.top-bar-links ul{
+	margin:15px;
+	list-style:none;
+}
+.top-bar-links ul li{
+	padding:0 10px;
+	display:inline-block;
+}
+.top-bar-links ul li:last-child{
+	border:0;
+}
+.top-bar-links ul li a{
+	padding-left: 100px;
+	font-size: 20px;
+	color:#0010254;
+	font-weight: bold;
+}
+.top-bar-links ul li a:hover{
+	color: orange;
+}
+.search{
+	padding:3px 10px;
+	margin:15px;
+	float:right;
+	background:white;
+	border-radius:10px;
+}
+.search input{
+	border:0;
+	float:left;
+}
+.search button{
+	background-image: url("../img/icon/search.jpg");
+	width:10px;
+	height:10px;
+	border:0;
+	float:right;
+}
+	div.image img{
+	width: 1350px;
+	height: 350px;
+	margin-top: 0;
+}

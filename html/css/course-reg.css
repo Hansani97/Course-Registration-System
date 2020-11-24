@@ -1,0 +1,72 @@
+body{
+    background-color: #6c757d;
+}
+i{
+    height: 30px;
+    width: 25px;
+    line-height: 29px;
+    background: none;
+    color: rgb(0.64.128);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.container{
+    margin-top: 10px;
+}
+.row1{
+    width: auto;
+    height: 80px;
+    background-color: #20c997;
+
+}
+.row1 .row a{
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 30px;
+    color: #000;
+}
+.row i{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    color: #002147;
+}
+.form-row i{
+    font-size: 1.3em;
+    color: #000;
+    position: absolute;
+    top: 65%;
+    left: 3%;
+}
+.form-row label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.table{
+    border: 2px solid;
+}
+.form-row input[type="text"]{
+    text-transform: uppercase;
+    text-align: center;
+}
+input[type="submit"]{
+    margin-left: 85%;
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 130px;
+    cursor: pointer;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}

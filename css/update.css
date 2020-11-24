@@ -1,0 +1,15 @@
+table tr td a{
+	text-decoration: none;
+	border-radius: 7px;
+	font-size: 20px;
+}
+table tr td a:hover{
+	text-decoration: none;
+	color: darkblue;
+}
+table tr th td{
+	border: 1px solid black;
+}
+label {
+	font-weight: bold;
+}

@@ -1,0 +1,40 @@
+body{
+	background-image: url("../img/group.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+a:hover{
+	color: yellow;
+}
+.loginbox{
+	width: 800px;
+	height: 700px;
+	background: gray;
+	top: 10%;
+	left: 20%;
+	position: absolute;
+}
+.loginbox h1{
+	text-align: center;
+	font-size: 25px;
+}
+table{
+	color: black;
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+input[type="text"],input[type="password"]{
+	padding-top: 10px;
+	padding-right: 100px;
+	text-align: center;
+}
+input[type="submit"]{
+	width: 120px;
+	font-size: 25px;
+	border-radius: 10px;
+	margin-bottom: 60px;
+	margin-top: 40px;
+	margin-right: 150px;
+	margin-left: 600px;
+}
