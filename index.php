@@ -12,7 +12,7 @@
 	}
 
 	function filterTable($query){
-		$connect=mysqli_connect('localhost','root','','one_year_project');
+		$connect=mysqli_connect('localhost','root','','cms');
 		$filter_result=mysqli_query($connect,$query);
 		return $filter_result;
 	}
@@ -77,13 +77,18 @@
 		<h1 align="center">Course Details</h1>
 		<form action="index.php" method="POST">
 		<div class="form-row">
-			<input type="hidden" name="ID" value="<?php echo $ID; ?>">
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-3">
+				<label>Number</label>
+				<input type="int" name="ID" class="form-control" 
+				value="<?php echo $ID; ?>" placeholder="Number" >
+			</div>
+			
+			<div class="form-group col-md-3">
 				<label>Course Title</label>
 				<input type="text" name="Course_Title" class="form-control" 
 				value="<?php echo $Course_Title;?>" placeholder="Course_Title" >
 			</div>
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-3">
 				<label>Course Code</label>
 				<input type="text" name="Course_Code" class="form-control" 
 				value="<?php echo $Course_Code;?>" placeholder="Course_Code" >
@@ -95,7 +100,7 @@
 				<input type="text" name="Status" class="form-control" 
 				value="<?php echo $Status;?>" placeholder="Status" >
 			</div>
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-5">
 				<label>Credit</label>
 				<input type="text" name="Credit" class="form-control" 
 				value="<?php echo $Credit;?>" placeholder="Credit" >
@@ -134,7 +139,7 @@
 			</div>
 		</form>
 		<?php 
-		$mysqli = new mysqli('localhost','root','','one_year_project') or die(mysqli_error($mysqli));
+		$mysqli = new mysqli('localhost','root','','cms') or die(mysqli_error($mysqli));
 		$result = $mysqli->query("SELECT * FROM courses")or die($mysqli->error);
 		?>
 
@@ -144,6 +149,7 @@
 		<table class="table" border="2px solid">
 			<thead>
 				<tr>
+					<th>Number</th>
 					<th>Course_Title</th>
 					<th>Course_Code</th>
 					<th>Status</th>
@@ -158,6 +164,7 @@
 			while ($row = mysqli_fetch_array($search_result)):
 		?>
 			<tr>
+				<td><?php echo $row['ID']?></td>
 				<td><?php echo $row['Course_Title']?></td>
 				<td><?php echo $row['Course_Code']?></td>
 				<td><?php echo $row['Status']?></td>

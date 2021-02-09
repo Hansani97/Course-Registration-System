@@ -1,12 +1,12 @@
 <?php
-	$connect = mysqli_connect('localhost','root','','one_year_project');
+	$connect = mysqli_connect('localhost','root','','cms');
 
 	if(mysqli_connect_errno()){
 		die('database connection fail' .mysqli_connect_error());
 
 	}
 	else{
-		//echo 'conection succsess';
+		echo 'conection succsess';
 	}
 
 	$Email= $_POST['Email'];
@@ -19,11 +19,11 @@
 	$row = $result->fetch_array();
 	if($row['Email'] == $Email && $row['Password'] == $Password){
 		echo "Login Success!!! Welcome";
-
-		header("location: admin-dashboard.php");
+		header("location: Admin Dashboard.php");
 	}
 	else{
 		echo 'Email or Password not correct';
+		header("location: Admin Login.php");
 		
 	}
 
